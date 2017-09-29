@@ -8,14 +8,12 @@ body {
 a {
   color: #00B7FF;
 }
-#map {
-  height: 80%;
-  width: 100%;
+#content {
+  height: 93vh;
 }
-#driving {
-  border: solid;
-  position: fixed;
-  top: 20%;
-  left: 1%;
-  width: 300px;
+#map {
+  border-radius: 5px;
+}
+.nav {
+  height: 5vh;
 }

@@ -1,25 +1,46 @@
-<div>
-    <h3><p>Welcome to</p></h3>
-    <h1>{{title}}</h1>
-</div>
-<div id="map"></div>
-<div id="driving">
-    <div>
-        From:
-        <div id="origin"></div>
-        <div id="originLat" hidden></div>
-        <div id="originLng" hidden></div>
-
+<div class="container-fluid">
+    <div id="nav-bar" class="row">
+        <div class="col-md-4">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="col-md-8">
+            <nav class="nav justify-content-end">
+                <a class="nav-link active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </nav>
+        </div>
     </div>
-    <div>
-        To:
-        <div id="dest"></div>
-        <div id="destLat" hidden></div>
-        <div id="destLng" hidden></div>
+    <div id="content" class="row">
+        <div id="left-menu" class="col-md-3">
 
+            <div class="card" style="width: 27rem;">
+                <img class="card-img-top" src="img/directions.jpg" width="150">
+                <div class="card-block">
+                    <h4 class="card-title">Choose Source and Destination</h4>
+                    <p class="card-text">
+                    <div class="form-group">
+                        From:
+                        <div id="origin"></div>
+                        <div id="originLat" hidden></div>
+                        <div id="originLng" hidden></div>
+                    </div>
+                    <div class="form-group">
+                        To:
+                        <div id="dest"></div>
+                        <div id="destLat" hidden></div>
+                        <div id="destLng" hidden></div>
+
+                    </div>
+                    </p>
+                    <button id="drive" type="button" class="btn btn-success">Find My Way</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="map" class="col-md-9"></div>
     </div>
-
-    <input id="drive" type="button" value="Find My Way">
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBQ46PRYLeVMFQPTdSjXSXSWWMH7cJXyc&callback=initMap" async defer></script>
 <script src="/js/map.js"></script>
