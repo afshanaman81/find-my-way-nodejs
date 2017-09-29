@@ -84,7 +84,7 @@ function getOriginDestination() {
                     })
                     getAddress(latLng, function(origin) {
                         //console.log(origin)
-                        $('#origin').text(origin)
+                        $('#origin').text("From: " + origin)
                         $('#originLat').text(latLng.lat)
                         $('#originLng').text(latLng.lng)
                     })
@@ -101,13 +101,13 @@ function getOriginDestination() {
                     })
                     getAddress(latLng, function(dest) {
                         //console.log(dest)
-                        $('#dest').text(dest)
+                        $('#dest').text("To: " + dest)
                         $('#destLat').text(latLng.lat)
                         $('#destLng').text(latLng.lng)
                     })
                 }
             }
-        }, 900)
+        }, 800)
     })
     google.maps.event.addListener(map, 'mouseup', function(event) {
         mousedUp = true
