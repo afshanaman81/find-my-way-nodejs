@@ -1,6 +1,6 @@
 <!--
 project idea:
-show pictures as features from google drive or flickr on a map
+find driving directions from point A to B a Google map
 
 
 APIs:
@@ -10,9 +10,6 @@ https://github.com/googlemaps/google-maps-services-js
 G Drive
 https://developers.google.com/drive/v3/web/quickstart/nodejs
 https://www.npmjs.com/package/google-drive
-
-flickr
-https://www.npmjs.com/package/flickrapi
 
 
 Samples/Examples:
