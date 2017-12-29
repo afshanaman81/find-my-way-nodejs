@@ -1,9 +1,9 @@
 <div class="container-fluid">
     <div id="nav-bar" class="row">
-        <div class="col-md-4">
-            <h2>{{title}}</h2>
+        <div class="col-md-6">
+            <h4><img class="card-img-top" src="img/directions.jpg" width="50"> {{title}}</h4>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
             <nav class="nav justify-content-end">
                 <a class="nav-link active" href="https://afshanaman81.github.io" target="_blank">Home</a>
                 <a class="nav-link" href="#">Dashboard</a>
@@ -15,18 +15,17 @@
     <div id="content" class="row">
         <div id="left-menu" class="col-md-3">
 
-            <div class="card" style="width: 27rem;">
-                <img class="card-img-top" src="img/directions.jpg" width="150">
+            <div class="card">
                 <div class="card-block">
-                    <h4 class="card-title">Choose Source and Destination:</h4>
+                    <h5 class="card-title">Choose Source and Destination:</h5>
                     <p class="card-text">
                     <div class="form-group">
-                        <div id="origin">From:</div>
+                        <div id="origin">From: <i class="font-small grey">Click and hold mouse on the map</i></div>
                         <div id="originLat" hidden></div>
                         <div id="originLng" hidden></div>
                     </div>
                     <div class="form-group">
-                        <div id="dest">To:</div>
+                        <div id="dest">To: <i class="font-small grey">Click and hold mouse on the map</i></div>
                         <div id="destLat" hidden></div>
                         <div id="destLng" hidden></div>
 
@@ -37,7 +36,10 @@
             </div>
         </div>
 
-        <div id="map" class="col-md-9"></div>
+        <div class="col-md-9">
+            <div id="map"></div>
+        </div>
+
     </div>
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBQ46PRYLeVMFQPTdSjXSXSWWMH7cJXyc&callback=initMap" async defer></script>

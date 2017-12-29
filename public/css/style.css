@@ -8,12 +8,20 @@ body {
 a {
   color: #00B7FF;
 }
-#content {
-  height: 93vh;
+#left-menu {
+  margin: 3vh 0;
 }
 #map {
   border-radius: 5px;
+  height: 89vh;
+  margin-bottom: 1vh;
 }
 .nav {
   height: 5vh;
+}
+.font-small {
+  font-size: x-small;
+}
+.grey {
+  color: gray;
 }
