@@ -8,11 +8,9 @@ body {
 a {
   color: #00B7FF;
 }
-#left-menu {
-  margin: 3vh 0;
-}
 #map {
   border-radius: 5px;
+  border: 2px solid lightgrey;
   height: 89vh;
   margin-bottom: 1vh;
 }
@@ -24,4 +22,19 @@ a {
 }
 .grey {
   color: gray;
+}
+@media only screen and (max-width: 740px) {
+  #left-menu {
+    margin: 2vh 0;
+  }
+}
+@media only screen and (max-width: 740px) and (orientation: landscape) {
+  #left-menu {
+    margin: 5vh 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #left-menu {
+    margin: 0;
+  }
 }
